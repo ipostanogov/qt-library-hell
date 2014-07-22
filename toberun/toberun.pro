@@ -15,11 +15,11 @@ INCLUDEPATH += \
 SOURCES += main.cpp
 
 LIBS += \
-    -L../build-common-Debug -lcommon \
     -L../build-fooer-Debug -lfooer \
-    -L../build-barer-Debug -lbarer
+    -L../build-barer-Debug -lbarer \
+    -L../build-common-Debug -lcommon
 
 PRE_TARGETDEPS += FORCE \
-    ../build-common-Debug/libcommon.a \
     ../build-fooer-Debug/libfooer.a \
-    ../build-barer-Debug/libbarer.a
+    ../build-barer-Debug/libbarer.a \
+    ../build-common-Debug/libcommon.a
